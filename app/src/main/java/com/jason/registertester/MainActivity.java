@@ -61,17 +61,17 @@ public class MainActivity extends AppCompatActivity {
                 restart();
             }
         };
-        if(edName.length() < 4 && edPassword.length() >= 6) {
+        if(edName.length() < 3 && edPassword.length() >= 6) {
             error1.setVisibility(View.VISIBLE);
             upper = "Warning!";
             include = "UserName must be at least 3 characters.";
             listener = null;
-        } else if(edPassword.length() < 7 && edName.length() >= 3) {
+        } else if(edPassword.length() < 6 && edName.length() >= 3) {
             error2.setVisibility(View.VISIBLE);
             upper = "Warning!";
             include = "Password must be at least 6 characters.";
             listener = null;
-        } else if(edName.length() < 4 && edPassword.length() < 7) {
+        } else if(edName.length() < 3 && edPassword.length() < 6) {
             error1.setVisibility(View.VISIBLE);
             error2.setVisibility(View.VISIBLE);
             upper = "Warning!";
